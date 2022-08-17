@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+header {
+    text-align: center;
+    background: darkslategray;
+    color: #eee;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root {
+    background: #121212;
+    color: gray;
+    padding: 0.5rem;
+    width: 280px;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 0.5rem;
+    /* font-size: small; */
+    position: absolute;
+    top: -15rem;
+    transition: 0.2s ease-in-out all;
+}
+
+.removePopupContainer {
+    text-align: right;
+}
+
+#removePopup {
+    background: #313131;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#navigation {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: gray;
+    background: #121212;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #121212;
+    color: #eee;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    padding: 0.5rem;
+    padding: 0.9rem;
+    transition: 0.2s all ease-in-out;
+}
+
+nav ul {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+#theme {
+    color: gray;
+    background: #3e3e3e;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 600;
+}
+
+footer a {
+    position: fixed;
+    color: black;
+    background: linear-gradient(darkslategray, darkcyan);
+    text-decoration: none;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 600;
+}
+
+footer #developer {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+footer #feedback {
+    bottom: 4rem;
+    right: 1rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    nav {
+        width: 280px;
+    }
+
+    #navigation {
+        top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #navigation {
+        top: 1.5rem;
+    }
+
+    .root {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .removePopupContainer {
+        text-align: left;
+    }
+}
